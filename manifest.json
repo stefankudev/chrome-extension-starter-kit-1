@@ -21,5 +21,11 @@
     "background": {
         "page": "background.html",
         "persistent": false
-    }
+    },
+    "content_scripts": [
+        {
+        "matches": ["https://www.google.com/"],
+        "js": ["scripts/extension/contentscript.js"]
+        }
+    ]
 }
